@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "lightningrods",
+    "name": "LightningRods",
+    "description": "Lighting Rods to make energy!",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["SkyHawkB"],
+    "credits": "The people at MMD for some assistance.",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [""]
+  }
+]
