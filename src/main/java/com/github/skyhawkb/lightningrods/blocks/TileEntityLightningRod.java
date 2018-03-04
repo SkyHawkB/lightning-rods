@@ -1,5 +1,6 @@
 package com.github.skyhawkb.lightningrods.blocks;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
@@ -7,7 +8,7 @@ import net.minecraftforge.energy.IEnergyStorage;
 
 import java.util.Random;
 
-public class TileEntityLightningRod extends TileEntity implements ITickable, IEnergyStorage {
+public class TileEntityLightningRod extends TileEntity implements ITickable {
     private static int ticksToNextStrike = 2000;
     private static int energyStored = 0;
     private static final Random random = new Random();
@@ -24,28 +25,13 @@ public class TileEntityLightningRod extends TileEntity implements ITickable, IEn
         energyStored = 1000000;
         ticksToNextStrike = 2000;
         markDirty();
-
         /*
+        * TODO: make it give away RF
         * TODO: make it slowly lose RF
         */
     }
 
-    public int receiveEnergy(int maxReceive, boolean simulate) {
-        return 0;
-    }
-    public int extractEnergy(int maxExtract, boolean simulate) {
-        return (10000 > maxExtract) ? maxExtract : 10000;
-    }
-    public int getEnergyStored() {
+    protected int getEnergyStored() {
         return energyStored;
-    }
-    public int getMaxEnergyStored() {
-        return 1000000;
-    }
-    public boolean canExtract() {
-        return true;
-    }
-    public boolean canReceive() {
-        return false;
     }
 }
