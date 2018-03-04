@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": {
+      "model": "lightningrods:lightning_rod"
+    },
+    "inventory": {
+      "model": "lightningrods:lightning_rod"
+    }
+  }
+}

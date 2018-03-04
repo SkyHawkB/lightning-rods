@@ -1,0 +1,131 @@
+﻿{
+  "credit": "Made with Blockbench, a free, modern block model editor by JannisX11 <3",
+  "textures": {
+    "0": "lightningrods:blocks/lightning_rod_top",
+    "1": "lightningrods:blocks/lightning_rod_base",
+    "particle": "lightningrods:blocks/lightning_rod_top"
+  },
+  "elements": [
+    {
+      "name": "cube",
+      "from": [4, 0, 4],
+      "to": [12, 1, 12],
+      "faces": {
+        "north": {"uv": [8, 13, 16, 14], "texture": "#1"},
+        "east": {"uv": [5, 6, 13, 7], "texture": "#1"},
+        "south": {"uv": [5, 10, 13, 11], "texture": "#1"},
+        "west": {"uv": [5, 5, 13, 6], "texture": "#1"},
+        "up": {"uv": [4, 3, 12, 11], "texture": "#1"},
+        "down": {"uv": [7, 5, 15, 13], "texture": "#1"}
+      },
+      "type": "cube"
+    },
+    {
+      "name": "cube",
+      "from": [4, 1, 4],
+      "to": [5, 2, 5],
+      "faces": {
+        "north": {"uv": [9, 9, 10, 10], "texture": "#1"},
+        "east": {"uv": [9, 9, 10, 10], "texture": "#1"},
+        "south": {"uv": [9, 9, 10, 10], "texture": "#1"},
+        "west": {"uv": [9, 9, 10, 10], "texture": "#1"},
+        "up": {"uv": [9, 9, 10, 10], "texture": "#1"},
+        "down": {"uv": [9, 9, 10, 10], "texture": "#1"}
+      },
+      "type": "cube"
+    },
+    {
+      "name": "cube",
+      "from": [11, 1, 4],
+      "to": [12, 2, 5],
+      "faces": {
+        "north": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "east": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "south": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "west": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "up": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "down": {"uv": [8, 10, 9, 11], "texture": "#1"}
+      },
+      "type": "cube"
+    },
+    {
+      "name": "cube",
+      "from": [11, 1, 11],
+      "to": [12, 2, 12],
+      "faces": {
+        "north": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "east": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "south": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "west": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "up": {"uv": [8, 10, 9, 11], "texture": "#1"},
+        "down": {"uv": [8, 10, 9, 11], "texture": "#1"}
+      },
+      "type": "cube"
+    },
+    {
+      "name": "cube",
+      "from": [4, 1, 11],
+      "to": [5, 2, 12],
+      "faces": {
+        "north": {"uv": [7, 6, 8, 7], "texture": "#1"},
+        "east": {"uv": [7, 6, 8, 7], "texture": "#1"},
+        "south": {"uv": [7, 6, 8, 7], "texture": "#1"},
+        "west": {"uv": [7, 6, 8, 7], "texture": "#1"},
+        "up": {"uv": [7, 6, 8, 7], "texture": "#1"},
+        "down": {"uv": [7, 6, 8, 7], "texture": "#1"}
+      },
+      "type": "cube"
+    },
+    {
+      "name": "cube",
+      "from": [7, 1, 7],
+      "to": [9, 14, 9],
+      "faces": {
+        "north": {"uv": [1, 2, 3, 15], "texture": "#0"},
+        "east": {"uv": [7, 2, 9, 15], "texture": "#0"},
+        "south": {"uv": [5, 2, 7, 15], "texture": "#0"},
+        "west": {"uv": [3, 2, 5, 15], "texture": "#0"},
+        "up": {"uv": [9, 5, 11, 7], "texture": "#0"},
+        "down": {"uv": [8, 8, 10, 10], "texture": "#0"}
+      },
+      "type": "cube"
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [0.4, 0.4, 0.4],
+      "rotation": [70, 45, 0],
+      "translation": [0, 0.5, 0]
+    },
+    "thirdperson_lefthand": {
+      "scale": [0.4, 0.4, 0.4],
+      "rotation": [70, 45, 0],
+      "translation": [0, 0.5, 0]
+    },
+    "firstperson_righthand": {
+      "scale": [0.68, 0.68, 0.68],
+      "rotation": [0, 90, 25],
+      "translation": [0, 1.6, 0]
+    },
+    "firstperson_lefthand": {
+      "scale": [0.68, 0.68, 0.68],
+      "rotation": [0, -150, -25],
+      "translation": [0.5, 2, 0]
+    },
+    "ground": {
+      "scale": [0.25, 0.25, 0.25],
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 0]
+    },
+    "fixed": {
+      "scale": [1, 1, 1],
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0]
+    },
+    "gui": {
+      "scale": [0.8, 0.8, 0.8],
+      "rotation": [30, 225, 0],
+      "translation": [0, 1.5, 0]
+    }
+  }
+}
