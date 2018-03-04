@@ -25,4 +25,4 @@ run
 *.log
 
 #secrets
-gradle.properties
+*.properties
