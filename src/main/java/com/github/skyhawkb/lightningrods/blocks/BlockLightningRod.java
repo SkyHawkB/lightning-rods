@@ -83,7 +83,7 @@ public class BlockLightningRod extends Block {
 
     @Override
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
-        if(!worldIn.isSideSolid(pos.add(0 ,-1, 0), EnumFacing.UP)) {
+        if(!worldIn.isSideSolid(pos.down(), EnumFacing.UP)) {
             worldIn.destroyBlock(pos, true);
         }
     }
