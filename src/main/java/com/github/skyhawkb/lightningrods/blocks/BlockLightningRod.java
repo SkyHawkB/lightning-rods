@@ -75,7 +75,6 @@ public class BlockLightningRod extends Block {
     }
 
     /*
-    * TODO: add an AABB to this block
     * TODO: make it need a solid block beneath (at all times)
     */
     @Override
