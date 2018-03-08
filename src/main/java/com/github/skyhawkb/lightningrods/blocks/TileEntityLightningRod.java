@@ -1,6 +1,7 @@
 package com.github.skyhawkb.lightningrods.blocks;
 
 import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
@@ -49,6 +50,18 @@ public class TileEntityLightningRod extends TileEntity implements ITickable {
 
     protected int getEnergyStored() {
         return energyStorage.getEnergyStored();
+    }
+
+    @Override
+    public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+        compound.setInteger("energyStored", energyStorage.getEnergyStored());
+        return super.writeToNBT(compound);
+    }
+
+    @Override
+    public void readFromNBT(NBTTagCompound compound) {
+        energyStorage.setEnergy(compound.getInteger("energyStored"));
+        super.readFromNBT(compound);
     }
 
     @Override

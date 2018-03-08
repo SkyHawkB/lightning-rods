@@ -16,4 +16,7 @@ public class LightingRodEnergyStorage extends EnergyStorage {
         this.energy -= random.nextInt(500) + 500;
         if(this.energy < 0) this.energy = 0;
     }
+    void setEnergy(int newEnergy) {
+        this.energy = newEnergy;
+    }
 }
