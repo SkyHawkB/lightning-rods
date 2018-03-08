@@ -24,7 +24,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 public class BlockLightningRod extends Block {
-    private boolean sendClickMessage = true;
+    private int sendClickMessage = 0;
 
     public BlockLightningRod() {
         super(Material.IRON);
@@ -76,8 +76,9 @@ public class BlockLightningRod extends Block {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if(!playerIn.isSneaking()) {
-            sendClickMessage = !sendClickMessage;
-            if(!sendClickMessage) return false;
+            sendClickMessage--;
+            if(sendClickMessage > 0) return false;
+            sendClickMessage = 3;
 
             playerIn.sendStatusMessage(new TextComponentString("RF stored: " + Integer.toString(((TileEntityLightningRod) this.getTileEntity(worldIn, pos)).getEnergyStored())), false);
             return true;
